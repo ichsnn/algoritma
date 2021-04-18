@@ -9,7 +9,6 @@ int main() {
     std::cout<<"Masukkan huruf : ";std::cin>>cc;
     cc = tolower(cc);
     if((cc=='a')||(cc=='i')||(cc=='u')||(cc=='e')||(cc=='e')) std::cout<<"huruf vokal";
-    else std::cout<<"bukan huruf vokal";
 
     return 0;
 

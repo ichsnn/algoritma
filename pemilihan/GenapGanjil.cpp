@@ -8,8 +8,11 @@ int main() {
     //ALGORITMA
     std::cout<<"Masukkan bilangan : ";std::cin>>x;
     if(x%2==0){
-        std::cout<<"genap";
+        std::cout<<"Genap";
+    } else {
+        std::cout<<"Ganjil";
     }
 
     return 0;
+
 }

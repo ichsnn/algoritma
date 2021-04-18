@@ -3,13 +3,13 @@
 int main() {
 
     //DEKLARASI
-    int x;
+    float x;
 
     //ALGORITMA
     std::cout<<"Masukkan bilangan : ";std::cin>>x;
-    if(x%2==0){
-        std::cout<<"genap";
-    }
+    if(x<0) x = -x;
+    std::cout<<x;
 
     return 0;
+
 }
