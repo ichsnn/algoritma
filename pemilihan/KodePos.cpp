@@ -16,7 +16,7 @@ int main() {
         cout<<"Kode POS  : 25000\n";
     } else if(kota == "bandung") {
         cout<<"Kode POS  : 40100\n";
-    }else if(kota == "solo") {
+    } else if(kota == "solo") {
         cout<<"Kode POS  : 51000\n";
     } else if(kota == "denpasar") {
         cout<<"Kode POS  : 72000\n";
