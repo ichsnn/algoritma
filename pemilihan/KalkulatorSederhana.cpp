@@ -14,7 +14,10 @@ int main() {
         case '+': ans = op1+op2; break;
         case '-': ans = op1-op2; break;
         case '*': ans = op1*op2; break;
-        case '/': ans = op1/op2; break;
+        case '/': if((op1 && op2) != 0) {
+                    ans = op1/op2; break;
+                  } else cout<<"error!"; break;
+        
         default: cout<<"operator salah!"; break;       
     }
     cout<<ans;
