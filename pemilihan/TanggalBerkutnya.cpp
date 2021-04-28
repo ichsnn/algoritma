@@ -39,8 +39,7 @@ int main() {
                         t.mm++;
                     }
                 }
-                break;
-        
+                break;        
     }
 
     std::cout<<"\nTanggal berikutnya adalah "<<t.dd<<"-"<<t.mm<<"-"<<t.yy<<"\n";
