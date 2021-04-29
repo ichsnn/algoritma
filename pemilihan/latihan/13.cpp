@@ -32,7 +32,7 @@ int main() {
 
     int diskon = 0;
 
-    if(umur<=19) {
+    if(umur<=12) {
         diskon = harga_tiket*0.25;
         harga = harga_tiket - diskon;
     }
