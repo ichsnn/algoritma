@@ -37,7 +37,8 @@ int main() {
         harga = harga_tiket - diskon;
     }
 
-    cout<<"FORM OUTPUT PEMBELIAN TIKET\n"<<endl;
+    cout<<"\n---------------------------------------------------------------"<<endl;
+    cout<<"\nFORM OUTPUT PEMBELIAN TIKET\n"<<endl;
     cout<<"Nama          : "<<nama<<endl;
     cout<<"Umur          : "<<umur<<endl;
     cout<<"Kota Tujuan   : "<<tujuan<<endl;
