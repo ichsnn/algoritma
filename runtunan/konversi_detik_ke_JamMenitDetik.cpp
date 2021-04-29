@@ -10,7 +10,7 @@ int main(){
     };
     Jam J;
     int TotalDetik;
-    int Sisa;   //penamping untuk sisa pembagi
+    int Sisa;   //penampung untuk sisa pembagi
     
     //Algoritma
     std::cin>>TotalDetik;
