@@ -1,3 +1,4 @@
+//This shouldn't use loops, but i need it
 #include <iostream>
 
 using namespace std;
