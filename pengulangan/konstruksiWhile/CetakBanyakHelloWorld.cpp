@@ -9,10 +9,14 @@ int main() {
 
     //ALGORITMA
     std::cin>>N;
-    for(i=1; i<=N; i++) {
+    i=1;
+    while(i<=N) {
         std::cout<<"Hello World!\n";
+        i++;
     }
+    
+
 
     return 0;
-    
+
 }
