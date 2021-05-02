@@ -11,24 +11,16 @@ int main() {
     //ALGORITMA
     Nangka = 0;
     Nspasi = 0;
-    Nlainnya = 0;    
-    cc = getchar();
+    Nlainnya = 0;
+    cc = getchar();        
     while(cc!='.') {        
         switch(cc) {
-            case '0': Nangka += 1; break;     
-            case '1': Nangka += 1; break;     
-            case '2': Nangka += 1; break;     
-            case '3': Nangka += 1; break;     
-            case '4': Nangka += 1; break;     
-            case '5': Nangka += 1; break;     
-            case '6': Nangka += 1; break;     
-            case '7': Nangka += 1; break;     
-            case '8': Nangka += 1; break;     
-            case '9': Nangka += 1; break;     
+            case '0': case '1': case '2': case '3': case '4':
+            case '5': case '6': case '7': case '8': case '9': Nangka += 1; break;     
             case ' ': Nspasi += 1; break;
             default : Nlainnya += 1; break;                                    
         }                
-        cc = getchar();
+        cc = getchar();      
     }
 
     std::cout<<"Jumlah Char Angka : "<<Nangka<<std::endl;
