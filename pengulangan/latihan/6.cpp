@@ -10,7 +10,7 @@ int main() {
 
     //ALGORITMA
     cin>>x;
-    while(x!=0) {
+    while(x>0) {
         if(x>=3000) {
             cout<<"MMM";
             x = x-3000;
