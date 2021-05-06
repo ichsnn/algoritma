@@ -149,6 +149,54 @@ void kata(int bil){
         luaran += "dua puluh";
         bil == 20 ? sisa = bil%20 : sisa %= 20;
     }  
+    if(bil == 19 || sisa == 19) {
+        if (luaran.length()>0) {
+            luaran += " ";
+        }
+        luaran += "sembilan belas";
+    }
+    if(bil == 18 || sisa == 18) {
+        if (luaran.length()>0) {
+            luaran += " ";
+        }
+        luaran += "delapan belas";
+    }
+    if(bil == 17 || sisa == 17) {
+        if (luaran.length()>0) {
+            luaran += " ";
+        }
+        luaran += "tujuh belas";
+    }
+    if(bil == 16 || sisa == 16) {
+        if (luaran.length()>0) {
+            luaran += " ";
+        }
+        luaran += "sebelas";
+    }
+    if(bil == 15 || sisa == 15) {
+        if (luaran.length()>0) {
+            luaran += " ";
+        }
+        luaran += "lima belas";
+    }
+    if(bil == 14 || sisa == 14) {
+        if (luaran.length()>0) {
+            luaran += " ";
+        }
+        luaran += "empat belas";
+    }
+    if(bil == 13 || sisa == 13) {
+        if (luaran.length()>0) {
+            luaran += " ";
+        }
+        luaran += "tiga belas";
+    }
+    if(bil == 12 || sisa == 12) {
+        if (luaran.length()>0) {
+            luaran += " ";
+        }
+        luaran += "sebelas";
+    }
     if(bil == 11 || sisa == 11) {
         if (luaran.length()>0) {
             luaran += " ";
