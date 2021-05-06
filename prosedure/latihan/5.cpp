@@ -56,7 +56,7 @@ void kata(int bil){
             luaran += " ";
         }
         luaran += "enam ratus";
-        bil == 100 ? sisa = bil%600 : sisa %= 600;
+        bil == 600 ? sisa = bil%600 : sisa %= 600;
     }  
     if(bil == 500 || sisa - (sisa%500) == 500) {
         if (luaran.length()>0) {
@@ -93,6 +93,62 @@ void kata(int bil){
         luaran += "seratus";
         bil == 100 ? sisa = bil%100 : sisa %= 100;
     }    
+    if(bil == 90 || sisa - (sisa%90) == 90) {
+        if (luaran.length()>0) {
+            luaran += " ";
+        }
+        luaran += "sembilan puluh";
+        bil == 90 ? sisa = bil%90 : sisa %= 90;
+    }  
+    if(bil == 80 || sisa - (sisa%80) == 80) {
+        if (luaran.length()>0) {
+            luaran += " ";
+        }
+        luaran += "delapan puluh";
+        bil == 80 ? sisa = bil%80 : sisa %= 80;
+    }  
+    if(bil == 70 || sisa - (sisa%70) == 70) {
+        if (luaran.length()>0) {
+            luaran += " ";
+        }
+        luaran += "tujuh puluh";
+        bil == 70 ? sisa = bil%70 : sisa %= 70;
+    }  
+    if(bil == 60 || sisa - (sisa%60) == 60) {
+        if (luaran.length()>0) {
+            luaran += " ";
+        }
+        luaran += "enam puluh";
+        bil == 60 ? sisa = bil%60 : sisa %= 60;
+    }  
+    if(bil == 50 || sisa - (sisa%50) == 50) {
+        if (luaran.length()>0) {
+            luaran += " ";
+        }
+        luaran += "lima puluh";
+        bil == 50 ? sisa = bil%50 : sisa %= 50;
+    }  
+    if(bil == 40 || sisa - (sisa%40) == 40) {
+        if (luaran.length()>0) {
+            luaran += " ";
+        }
+        luaran += "empat puluh";
+        bil == 40 ? sisa = bil%40 : sisa %= 40;
+    }  
+    if(bil == 30 || sisa - (sisa%30) == 30) {
+        if (luaran.length()>0) {
+            luaran += " ";
+        }
+        luaran += "tiga puluh";
+        bil == 30 ? sisa = bil%30 : sisa %= 30;
+    }  
+    if(bil == 20 || sisa - (sisa%20) == 20) {
+        if (luaran.length()>0) {
+            luaran += " ";
+        }
+        luaran += "dua puluh";
+        bil == 20 ? sisa = bil%20 : sisa %= 20;
+    }  
     if(bil == 11 || sisa == 11) {
         if (luaran.length()>0) {
             luaran += " ";
@@ -162,7 +218,5 @@ void kata(int bil){
             luaran += "satu";
         }
     }
-    
-    
     cout<<luaran;
 }
