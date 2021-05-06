@@ -2,6 +2,7 @@
 
 using namespace std;
 
+//DEKLARASI PURWARUPA PROSEDURE YANG DIGUNAKAN
 void HitungRerata(float *u);
 
 main() {
