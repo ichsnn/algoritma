@@ -4,7 +4,7 @@
 using namespace std;
 
 //DEKLARASI PURWARUPA PROSEDURE YANG DIGUNAKAN    
-void HariSelanjutnya(string hari, string *luaran);
+void HariSebelumnya(string hari, string *luaran);
 
 main() {
 
@@ -14,11 +14,11 @@ main() {
 
     //PROGRAM UTAMA
     cout<<"Hari : ";cin>>namaHari;
-    HariSelanjutnya(namaHari, &namaHari1);    
-    cout<<"Hari selanjutnya adalah hari "<<namaHari1<<endl;
+    HariSebelumnya(namaHari, &namaHari1);    
+    cout<<"Hari sebelumnya adalah hari "<<namaHari1<<endl;
 }
 
-void HariSelanjutnya(string hari, string *luaran) {
+void HariSebelumnya(string hari, string *luaran) {
 
     //DEKLARASI
         //TIDAK ADA
@@ -27,25 +27,25 @@ void HariSelanjutnya(string hari, string *luaran) {
     for(int i=0;i<=hari.length();i++) {
         hari[i] = tolower(hari[i]);
     }
-    if(hari=="senin") {
+    if(hari=="selasa") {
+        *luaran = "Senin";
+    } 
+    if(hari=="rabu"){
         *luaran = "Selasa";
     } 
-    if(hari=="selasa"){
-        *luaran = "Rabu";
-    }
-    if(hari=="rabu"){
-        *luaran = "Kamis";
-    }
     if(hari=="kamis"){
-        *luaran = "Jumat";
+        *luaran = "Rabu";
     } 
     if(hari=="jumat"){
-        *luaran = "Sabtu";
+        *luaran = "Kamis";
     } 
     if(hari=="sabtu"){
-        *luaran = "Minggu";
-    }
+        *luaran = "Jumat";
+    } 
     if(hari=="minggu"){
         *luaran = "Senin";
+    } 
+    if(hari=="senin"){
+        *luaran = "Minggu";
     }
 }

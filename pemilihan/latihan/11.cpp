@@ -117,7 +117,7 @@ int main() {
     }
 
     total1 = t1.yy*365 + bulan1 + t1.dd;       //total hari tanggal pertama
-    total2 = t2.yy*365 + bulan2 + t2.dd;       //total hari tanggal kedua    
+    total2 = t2.yy*365 + bulan2 + t2.dd;       //total hari tanggal kedua        
     
     if(total2>=total1) {
         durasi = total2 - total1;
@@ -129,7 +129,15 @@ int main() {
             if((t1.yy%4 == 0 && t1.yy%100 != 0) || t1.yy%400 == 0)  {
                 kemunculan_kabisat+=1;
             }        
+        } 
+    } else {
+        for(t2.yy; t2.yy<t1.yy; t2.yy++) {
+            if((t2.yy%4 == 0 && t2.yy%100 != 0) || t2.yy%400 == 0)  {
+                kemunculan_kabisat+=1;
+            }        
+        }
     }
+    
 
     durasi += kemunculan_kabisat;
 
