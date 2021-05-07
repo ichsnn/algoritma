@@ -21,8 +21,8 @@ main() {
     cout<<"Masukkan jam sekarang (hh:mm:ss): ";
     cin>>j.hh>>j.mm>>j.ss;    
     JamSebelumnya(&j.hh, &j.mm, &j.ss);    
-    cout<<"Jam sebelumnya (hh:mm:ss)       :";
-    cout<<j.hh<<":"<<j.mm<<":"<<j.ss;
+    cout<<"Jam sebelumnya (hh:mm:ss)       : ";
+    cout<<j.hh<<":"<<j.mm<<":"<<j.ss<<endl;
     cout<<"-----------------------------------------------"<<endl;
 
 }
