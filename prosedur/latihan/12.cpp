@@ -23,7 +23,7 @@ void piramid(int N){
 
     //ALGORITMA
     for(i=1;i<=N;i++) {
-        for(j=i;j<=N;j--) {
+        for(j=i;j<=N;j++) {
             cout<<j;
         }
         cout<<endl;
