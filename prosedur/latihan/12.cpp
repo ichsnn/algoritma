@@ -20,12 +20,30 @@ void piramid(int N){
 
     //DEKLARASI
     int i, j;
+    int count, count1;
+    int k;
 
-    //ALGORITMA
+    //ALGORITMA   
+    count=0;
+    count1=0;
+    k=0; 
     for(i=1;i<=N;i++) {
-        for(j=i;j<=N;j++) {
-            cout<<j;
+        for(j=1;j<=N-i;j++) {
+            cout<<"  ";
+            count++;
         }
-        cout<<endl;
+        while(k!=2*i-1) {
+            if(count<=N-1) {
+                cout<<i+k<<" ";
+                count++;
+            } else {
+                count1++;
+                cout<<i+k-2*count1<<" ";
+            }
+            k++;
+        }
+        count1=count=k=0;
+        cout<<endl;       
     }
 }
+
