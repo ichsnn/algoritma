@@ -34,15 +34,20 @@ void _2Maks(LarikInt A, int N, int *max1, int *max2) {
     //DEKLARASI
     int i, j, temp;
     //ALGORITMA                
-    for(i=1;i<=N;i++) {        
-        for(j=i;j<=N;j++) {
-            if(A[j] < A[i]) {                
-                temp = A[j];
-                A[j] = A[i];
-                A[i] = temp;
-            }
-        }        
+    if(A[1] > A[2]) {
+        *max1 = A[1];
+        *max2 = A[2];
+    } else {
+        *max1 = A[2];
+        *max2 = A[1];        
     }
-    *max1 = A[N];
-    *max2 = A[N-1];
+
+    for(i=3;i<=N;i++) {
+        if(*max1 < A[i]) {
+            *max2 = *max1;
+            *max1 = A[i];
+        } else if(*max2 < A[i]) {
+            *max2 = A[i];
+        }
+    }
 }
