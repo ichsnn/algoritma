@@ -17,15 +17,18 @@ main() {
 
 string HilangkanC(string s) {
     //DEKLARASI
-    int i, j;
-    //ALGORITMA    
-    for(i=0;i<s.size();i++) {
+    int i, j, n;    
+    //ALGORITMA 
+    n = s.size();
+    for(i=0;i<n;i++) {
         if(s[i] == 'c' || s[i] == 'C') {
-            for(j=i+1;j<s.size();j++) {
+            for(j=i+1;j<n;j++) {
                 s[j-1] = s[j];
             }
-            s[s.size()-1] = '\0';                      
+            s[n-1] = '\0';                      
+            n--;
         }
     }
+    cout<<n<<endl;    
     return s;
 }
