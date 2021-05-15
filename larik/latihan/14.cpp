@@ -1,30 +1,31 @@
 #include <iostream>
-#include <stdio.h>
+#include <string>
 
 using namespace std;
 
-const int Nmaks = 100;
-
-void HilangkanC(char s[]);
+string HilangkanC(string s);
 
 main() {
     //DEKLARASI
-    char s[Nmaks];
+    string s;
     //ALGORITMA
     cout<<"Masukkan string : ";
-    cin.getline(s, Nmaks);
-    HilangkanC(s);    
+    getline(cin, s);
+    s = HilangkanC(s);          
     cout<<s<<endl;    
 }
 
-void HilangkanC(char s[]) {
+string HilangkanC(string s) {
     //DEKLARASI
-    int i, k;
-    //ALGORITMA
-    for(i=0;s[i]!='\0';i++) {
-        if(s[i] == 'c') {            
-            s[i] = ' ';                                    
+    int i, j;
+    //ALGORITMA    
+    for(i=0;i<s.size();i++) {
+        if(s[i] == 'c' || s[i] == 'C') {
+            for(j=i+1;j<s.size();j++) {
+                s[j-1] = s[j];
             }
-        }        
-    }    
+            s[s.size()-1] = '\0';                      
+        }
+    }
+    return s;
 }
