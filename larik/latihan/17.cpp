@@ -19,6 +19,7 @@ main() {
     //DEKLARASI      
     dataMahasiswa data;  
     int N;
+    int iMax, iMin;
     //ALGORITMA    
     cout<<"Berapa banyak data mahasiswa yang akan dibuat ? : ";cin>>N;
     system("cls");
@@ -28,9 +29,17 @@ main() {
     cetakData(data, N);
     system("pause");
     system("cls");
+    iMax = tertinggi(data, N);
+    iMin = tertinggi(data, N);
     cout<<"Mahasiswa dengan IPK tertinggi : "<<endl;
-    cout<<"Nama : "<<data.nama[tertinggi(data, N)]<<endl;
-    cout<<"NIM  : "<<data.nim[tertinggi(data, N)]<<endl;
+    cout<<"Nama : "<<data.nama[iMax]<<endl;
+    cout<<"NIM  : "<<data.nim[iMax]<<endl;
+    cout<<"IPK  : "<<data.ipk[iMax]<<endl;
+    cout<<endl;
+    cout<<"Mahasiswa dengan IPK terendah : "<<endl;
+    cout<<"Nama : "<<data.nama[iMin]<<endl;
+    cout<<"NIM  : "<<data.nim[iMin]<<endl;
+    cout<<"IPK  : "<<data.ipk[iMin]<<endl;
 }
 
 void bacaData(dataMahasiswa &data1, int banyak) {
@@ -59,7 +68,7 @@ void cetakData(dataMahasiswa data1, int banyak) {
     cout<<"---------------------------------------"<<endl;
     for(i=1;i<=banyak;i++) {
         if(data1.ipk[i] > 2.0) {
-            cout<<urutan<<". "<<data1.nim[i]<<" "<<data1.nama[i]<<endl;
+            cout<<urutan<<". "<<data1.nim[i]<<" "<<data1.nama[i]<<" "<<data1.ipk[i]<<endl;
             urutan++;
         }        
     }
@@ -67,8 +76,7 @@ void cetakData(dataMahasiswa data1, int banyak) {
 
 int tertinggi(dataMahasiswa data1, int banyak) {
     //DEKLARASI
-    int i;
-    int j;
+    int i;    
     int max=data1.ipk[1];    
     int iMax = 1;
     //ALGORITMA
@@ -79,4 +87,18 @@ int tertinggi(dataMahasiswa data1, int banyak) {
         }
     }
     return iMax;
+}
+int terendah(dataMahasiswa data1, int banyak) {
+    //DEKLARASI
+    int i;    
+    int min=data1.ipk[1];    
+    int iMin = 1;
+    //ALGORITMA
+    for(i=2;i<=banyak;i++) {
+        if(data1.ipk[i] < min) {
+            min = data1.ipk[i];
+            iMin = i; 
+        }
+    }
+    return iMin;
 }
