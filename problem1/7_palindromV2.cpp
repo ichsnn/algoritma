@@ -29,14 +29,15 @@ bool palindrom(string huruf, int N)
 // MAIN PROGRAM
 int main(int argc, char const *argv[])
 {
-    // Declaration 
+    // Declaration
     string kata;
 
     // Program
-    cout<<"Masukkan Kata : ";getline(cin, kata);
-    if(palindrom(kata, kata.length()))
-        cout<<"Palindrom";
+    cout << "Masukkan Kata : ";
+    getline(cin, kata);
+    if (palindrom(kata, kata.length()))
+        cout << "Palindrom";
     else
-        cout<<"Bukan Palindrom";
+        cout << "Bukan Palindrom";
     return 0;
 }
